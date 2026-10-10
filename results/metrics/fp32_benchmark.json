@@ -1,0 +1,13 @@
+{
+    "model": "keyword_cnn_fp32",
+    "model_path": "models\\keyword_cnn_fp32.keras",
+    "batch_size": 1,
+    "warmup_runs": 20,
+    "benchmark_runs": 200,
+    "mean_latency_ms": 5.8287439988635015,
+    "median_latency_ms": 5.802200001198798,
+    "p95_latency_ms": 6.533600002148887,
+    "min_latency_ms": 4.7411999985342845,
+    "max_latency_ms": 7.288799999514595,
+    "throughput_inferences_per_second": 171.56354785782008
+}

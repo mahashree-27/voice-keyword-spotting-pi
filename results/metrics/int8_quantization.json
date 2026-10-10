@@ -1,0 +1,13 @@
+{
+    "model": "keyword_cnn_int8",
+    "source_model": "models\\keyword_cnn_fp32.keras",
+    "representative_samples": 300,
+    "model_size_bytes": 5437368,
+    "model_size_mb": 5.185478210449219,
+    "input_dtype": "<class 'numpy.int8'>",
+    "output_dtype": "<class 'numpy.int8'>",
+    "input_scale": 0.042965102940797806,
+    "input_zero_point": -7,
+    "output_scale": 0.21941836178302765,
+    "output_zero_point": 3
+}

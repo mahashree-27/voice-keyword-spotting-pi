@@ -1,0 +1,53 @@
+{
+    "fp32": {
+        "model_type": "LiteRT FP32",
+        "model_path": "deployment/keyword_cnn_fp32.tflite",
+        "model_size_bytes": 21710768,
+        "model_size_mb": 20.705001831054688,
+        "input_dtype": "<class 'numpy.float32'>",
+        "output_dtype": "<class 'numpy.float32'>",
+        "input_shape": [
+            1,
+            49,
+            64,
+            1
+        ],
+        "num_threads": 1,
+        "warmup_runs": 20,
+        "benchmark_runs": 200,
+        "mean_latency_ms": 1.5248940001765732,
+        "median_latency_ms": 1.4861000017845072,
+        "p95_latency_ms": 1.848295009403955,
+        "min_latency_ms": 1.3020000042160973,
+        "max_latency_ms": 2.5431999965803698,
+        "throughput_inferences_per_second": 655.7832871558327
+    },
+    "int8": {
+        "model_type": "LiteRT INT8",
+        "model_path": "deployment/keyword_cnn_int8.tflite",
+        "model_size_bytes": 5437368,
+        "model_size_mb": 5.185478210449219,
+        "input_dtype": "<class 'numpy.int8'>",
+        "output_dtype": "<class 'numpy.int8'>",
+        "input_shape": [
+            1,
+            49,
+            64,
+            1
+        ],
+        "num_threads": 1,
+        "warmup_runs": 20,
+        "benchmark_runs": 200,
+        "mean_latency_ms": 0.41377149980689865,
+        "median_latency_ms": 0.37945000076433644,
+        "p95_latency_ms": 0.6200799987709612,
+        "min_latency_ms": 0.31570000282954425,
+        "max_latency_ms": 0.8591999940108508,
+        "throughput_inferences_per_second": 2416.7928445209154
+    },
+    "comparison": {
+        "mean_latency_reduction_percent": 72.8655565725233,
+        "speedup_factor": 3.6853529082796177,
+        "model_size_reduction_percent": 74.9554322537093
+    }
+}

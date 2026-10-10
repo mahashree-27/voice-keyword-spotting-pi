@@ -1,0 +1,9 @@
+.kspotting/
+data/
+__pycache__/
+*/__pycache__/
+*.py[cod]
+.env
+.tmp.driveupload/
+models/
+results/figures/
